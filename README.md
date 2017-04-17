@@ -39,21 +39,6 @@ It supports:
 - vimeo.com as well as youtu.be
 - Regular URLs: https://vimeo.com/153979733
 
-## Options
-It supports every regular Video.js options. Additionally, you can change any [Vimeo parameter](https://developers.google.com/vimeo/player_parameters?hl=en#Parameters). Here is an example of setting the `iv_load_policy` parameter to `1`.
-
-```html
-<video
-  id="vid1"
-  class="video-js vjs-default-skin"
-  controls
-  autoplay
-  width="640" height="264"
-  data-setup='{ "techOrder": ["vimeo"], "sources": [{ "type": "video/vimeo", "src": "https://vimeo.com/153979733"}], "vimeo": { "iv_load_policy": 1 } }'
->
-</video>
-```
-
 ### Vimeo controls
 Because `controls` is already a Video.js option, to use the Vimeo controls, you must set the `ytControls` parameter.
 
