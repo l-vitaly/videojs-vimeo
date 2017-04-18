@@ -46,6 +46,10 @@
             }
             this.setSrc(this.options_.source, true);
 
+            if (this.options_.mute) {
+                this.startMuted = true
+            }
+
             // Set the vjs-vimeo class to the player
             // Parent is not set yet so we have to wait a tick
             setTimeout(function () {
